@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+   <!-- python manage.py makemigrations -->
+   <!--  python manage.py createsuperuser -->
+
+{% for home in home %}
+<header>
+  <div class="d-flex justify-content-center align-items-center position-relative text-center vh-100">
+    <div class="clipboard"></div>
+    <div class="position-relative">
+      <p class="font-type title text-pink">{{ home.logo }}</p>
+      <p class="font-type subtitle text-pink">{{ home.login }}</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container-fluid pt-lg-5 pt-xl-0">
+    <div class="text-center py-5 mt-lg-5 mt-xl-0 mb-10">
+      <p class="font-type title">
+        <span class="text-orange">Peace, </span>
+        <span class="text-almost-white">Love, </span>
+        <span class="text-pink">Music</span></p>
+      <p class="font-type subtitle">
+        <span class="text-orange">August </span>
+        <span class="text-almost-white">15 - 18, </span>
+        <span class="text-pink">1969</span></p>
+      <p class="font-type subtitle">
+        <span class="text-orange">Bethel, </span>
+        <span class="text-almost-white">New </span>
+        <span class="text-pink">York</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="fw-bold text-almost-white mb-5">{{ home.text }}</h1>
+      </div>
+    </div>
+    <div class="row mb-10">
+      <div class="col-md-8 col-lg-7 col-xl-6 mb-5 mb-md-0 mb-xl-5">
+        <h3 class="fw-bold text-almost-white mb-4">Friday, August 15 - Saturday, August 16</h3>
+        <ul class="list-unstyled text-almost-white">
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Richie Havens
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Satchidananda Saraswati
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Sweetwater
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Bert Sommer
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Tim Hardin
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Ravi Shankar
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Melanie
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Arlo Guthrie
+          </li>
+          <li>
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Joan Baez
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 offset-lg-1 offset-xl-2 mb-5 mb-md-0 mb-xl-5">
+        <div>
+          <img src="https://mdbootstrap.com/img/Photos/woodstock/img2.jpg" alt="hippie guy" class="img-fluid rounded-6">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-10">
+      <div class="col-md-4 mb-5 mb-md-0 mb-xl-5">
+        <div>
+          <img src="https://mdbootstrap.com/img/Photos/woodstock/img1.jpg" alt="hippie girl" class="img-fluid rounded-6">
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-7 col-xl-6 offset-lg-1 offset-xl-2 mb-5 mb-md-0 mb-xl-5">
+        <h3 class="fw-bold text-almost-white mb-4">{{ home.link }}</h3>
+        <ul class="list-unstyled text-almost-white">
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Quill
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Country Joe McDonald
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Santana
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            John Sebastian
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Keef Hartley Band
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            The Incredible String Band
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Canned Heat
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Mountain
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Grateful Dead
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Creedence Clearwater Revival
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Janis Joplin with The Kozmic Blues Band
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Sly and the Family Stone
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            The Who
+          </li>
+          <li>
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Jefferson Airplane
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mb-10">
+      <div class="col-md-8 col-lg-7 col-xl-6 mb-5 mb-md-0 mb-xl-5">
+        <h3 class="fw-bold text-almost-white mb-4">Sunday, August 17 - Monday, August 18</h3>
+        <ul class="list-unstyled text-almost-white">
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            {{ home.brend }}
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Country Joe and the Fish
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Ten Years After
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            The Band
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Johnny Winter
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Blood, Sweat & Tears
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Crosby, Stills, Nash & Young
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Paul Butterfield Blues Band
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Sha Na Na
+          </li>
+          <li>
+            <i class="fas fa-peace fa-sm me-3"></i>
+            Jimi Hendrix / Gypsy Sun & Rainbows
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 offset-lg-1 offset-xl-2 mb-5 mb-md-0 mb-xl-5">
+        <div>
+          <img src="https://mdbootstrap.com/img/Photos/woodstock/img3.jpg" alt="hippie flower" class="img-fluid rounded-6">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="text-center mb-10">
+      <p class="font-type title">
+        <span class="text-pink">Make </span>
+        <span class="text-pink">Love </span>
+        <span class="text-orange">Not </span>
+        <span class="text-orange">War </span>
+      </p>
+    </div>
+  </div>
+</main>
+  {% endfor %}
+  
+    
+</body>
+</html>
